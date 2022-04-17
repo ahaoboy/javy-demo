@@ -1,0 +1,57 @@
+{
+  "name": "release",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js ./src/t.tsx -o ./dist/t.js --jsx",
+    "bc": "rollup --config rollup.config.js ./src/client.tsx -o ./src/public/client.js --jsx",
+    "bs": "rollup --config rollup.config.js ./src/service.tsx -o ./dist/ssr/service.js --jsx",
+    "bp": "rollup --config rollup.config.js ./src/p.ts -o ./dist/p.js --jsx",
+    "bf": "rollup --config rollup.config.js ./src/f.ts -o ./dist/f.js --jsx",
+    "bt": "rollup --config rollup.config.js ./src/p.ts -o ./dist/p.js --jsx",
+    "br": "rollup --config rollup.config.js ./lib/_stream_readable.js -o ./dist/r.js",
+    "bssr": "rollup --config rollup.config.js ./src/main.tsx -o ./dist/ssr.js --jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ace",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@rollup/plugin-commonjs": "^21.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/express": "^4.17.13",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "@types/readable-stream": "^2.3.13",
+    "binia": "^1.0.8",
+    "express": "^4.17.3",
+    "inherits": "^2.0.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "readable-stream": "^3.6.0",
+    "rollup": "^2.70.2",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "string_decoder": "^1.1.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3",
+    "util": "^0.12.4",
+    "util-deprecate": "^1.0.1",
+    "valtio": "^1.5.2"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.2.1",
+    "babel": "^6.23.0",
+    "i": "^0.3.7"
+  }
+}
